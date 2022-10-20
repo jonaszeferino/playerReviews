@@ -10,12 +10,12 @@ export default function navbar() {
         </Link>
       </li>
       <li>
-        <Link href="/myPlayers">
+        <Link href="/">
           <a>Meus Jogadores</a>
         </Link>
         <ul>
             <li>
-            <Link href="/mySoccerPlayers">
+            <Link href="/">
               <a>Futebol</a>
             </Link>
            </li>
