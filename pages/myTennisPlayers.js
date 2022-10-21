@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 let url = "http://localhost:3000/api/GetTennisPlayers";
 
+
 export default function Home() {
   let [name, setName] = useState();
   let [franchise, setFranchise] = useState();
@@ -14,6 +15,7 @@ export default function Home() {
   let [hability, setHability] = useState();
   let [shooting, setShooting] = useState();
   let [rate, setRate] = useState(50);
+
 
   useEffect(() => {
     

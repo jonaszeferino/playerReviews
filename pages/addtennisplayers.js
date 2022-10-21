@@ -12,17 +12,24 @@ const innitialTennisPlayerState = {
   hability: 50,
   physical: 50,
   rate: 50,
+  date: ""
 };
+
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed);
+console.log(today);
 
 export default function Home() {
   let [tennisPlayer, setTennisPlayer] = useState(innitialTennisPlayerState);
-  
   let [age, setAge] = useState(50);
   let [sacks, setSacks] = useState(50);
   let [hability, setHability] = useState(50);
   let [physical, setPhysical] = useState(50);
   let [rate, setRate] = useState(50);
   let [data, setData] = useState("Digitando");
+  let [date, setDate] = useState(today);
+  
+ 
 
   const clean = () => {
     setTennisPlayer(innitialTennisPlayerState);
@@ -49,6 +56,7 @@ export default function Home() {
       hability: tennisPlayer.hability,
       physical: tennisPlayer.physical,
       rate: tennisPlayer.rate,
+      createdDate: date
     };
     const url = "http://localhost:3000/api/SaveTennisPlayers";
     fetch(url, {
@@ -201,6 +209,16 @@ export default function Home() {
               onChange={(event) => setRate(event.target.value)}
             ></input>
             <div defaultValue={50}>{rate}</div>
+          </label>
+          <br />
+          <label>
+          <input
+              
+              type="hidden"
+              className={styles.input}
+              value={date}
+              onChange={(event) => setDate(date)}
+            ></input>            
           </label>
           <br />
 
