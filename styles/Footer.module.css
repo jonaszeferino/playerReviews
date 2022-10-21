@@ -1,11 +1,10 @@
 .footer {
  display: flex;
- 
-background-color: #092b45;
+ background-image: url('/images/fundo2.jpg');
  background-size: cover;
  background-position: center;
  color: white;
- height: 80px;
+ height: 160px;
  justify-content: center;
  align-items: center;
 

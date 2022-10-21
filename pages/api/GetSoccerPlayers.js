@@ -8,7 +8,7 @@ export default async function handler(req, res) {
       // const location = {
       //   localOfView: "a",
       // };
-      const getMongo = await collection.find().toArray();
+      const getMongo = await collection.find().forEach();
       // nesse caso vai buscar todos registros que tenham na prop "localOfView: "Netflix"
 
       res.json({

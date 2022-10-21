@@ -15,7 +15,7 @@ export default function navbar() {
         </Link>
         <ul>
             <li>
-            <Link href="/">
+            <Link href="mySoccerPlayers">
               <a>Futebol</a>
             </Link>
            </li>
@@ -27,7 +27,7 @@ export default function navbar() {
         </ul>
               </li>
       <li>
-        <Link href="/addPlayers">
+        <Link href="/">
           <a>Adicionar Jogadores</a>
         </Link>
         <li>

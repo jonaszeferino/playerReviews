@@ -14,10 +14,10 @@ export default function Home() {
         <a>Adiconar Jogadores de Futebol</a>
       </Link>
       <br/>
-      <Link href="/myPlayers">
+      <Link href="/mySoccerPlayers">
         <a>Ver as Reviews de Futebol</a>
       </Link>
     </div>
   );
 }
-// pode ser usar componente direto na pagina <Navbar /> nesse caso
+
