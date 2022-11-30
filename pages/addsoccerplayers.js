@@ -26,9 +26,8 @@ export default function Home() {
       setShooting(50),
       setRate(50);
     setAge(0);
-    setPosition("choise"), 
-    setFoot("choiseFoot");
-    setData("Digitando")
+    setPosition("choise"), setFoot("choiseFoot");
+    setData("Digitando");
   };
 
   function submitPlayers(event) {
@@ -72,6 +71,7 @@ export default function Home() {
             Jogador:
             <br />
             <input
+              required="true"
               type="text"
               className={styles.input}
               value={name}
